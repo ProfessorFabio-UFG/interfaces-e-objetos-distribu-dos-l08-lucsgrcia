@@ -59,6 +59,9 @@ public class Client {
 
             int resp = stub.soma(100,1000);
             System.out.println("Response from soma: " + resp);
+
+            double mult = stub.multiplicacao(3.5, 2.0);
+            System.out.println("Multiplication: " + mult);
             
         } catch (Exception e) {
             System.err.println("Client exception: " + e.toString());

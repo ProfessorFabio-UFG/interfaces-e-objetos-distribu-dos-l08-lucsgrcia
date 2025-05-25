@@ -54,6 +54,10 @@ public class Server implements Hello {
         return a + b;
     }
 
+    public double multiplicacao(double a, double b) throws RemoteException {
+        return  a * b;
+    }
+
     public static void main(String args[]) {
 
         try {
@@ -61,7 +65,7 @@ public class Server implements Hello {
             Hello stub = (Hello) UnicastRemoteObject.exportObject(obj, 0);
 
             // Bind the remote object's stub in the registry
-            Registry registry = LocateRegistry.getRegistry();
+            Registry registry = LocateRegistry.createRegistry(1099);
             registry.rebind("Hello", stub);
 
             System.err.println("Server ready");
