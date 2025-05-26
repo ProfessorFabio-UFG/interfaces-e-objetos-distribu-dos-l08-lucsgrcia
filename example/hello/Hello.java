@@ -44,4 +44,7 @@ public interface Hello extends Remote {
     String sayHello() throws RemoteException;
     int soma(int a, int b) throws RemoteException;
     double multiplicacao(double a, double b) throws RemoteException;
+    int subtrai(int a, int b) throws RemoteException;
+    boolean isPar(int numero) throws RemoteException;
+    String inverteTexto(String texto) throws RemoteException;
 }
