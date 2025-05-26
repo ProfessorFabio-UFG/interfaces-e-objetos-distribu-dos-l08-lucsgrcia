@@ -62,6 +62,15 @@ public class Client {
 
             double mult = stub.multiplicacao(3.5, 2.0);
             System.out.println("Multiplication: " + mult);
+
+            int r1 = stub.subtrai(50, 20);
+            System.out.println("Subtração: " + r1);
+
+            boolean par = stub.isPar(42);
+            System.out.println("É par? " + par);
+
+            String invertido = stub.inverteTexto("Hello!");
+            System.out.println("Texto invertido: " + invertido);
             
         } catch (Exception e) {
             System.err.println("Client exception: " + e.toString());
