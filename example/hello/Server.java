@@ -58,6 +58,18 @@ public class Server implements Hello {
         return  a * b;
     }
 
+    public int subtrai(int a, int b) {
+        return a - b;
+    }
+
+    public boolean isPar(int numero) {
+        return numero % 2 == 0;
+    }
+
+    public String inverteTexto(String texto) {
+        return new StringBuilder(texto).reverse().toString();
+    }
+
     public static void main(String args[]) {
 
         try {
